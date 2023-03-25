@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Miniature collection</string>
+
+    <!--=== PAGE ACCUEIL ===-->
+    <string name="pagePrincipalTitre">Page d\'accueil</string>
+    <string name="pagePrincipalListe">Liste des miniatures</string>
+
+    <!--=== PAGE SELECTION ===-->
+    <string name="pageSelectionTitre">Selection personnel</string>
+
+    <!--=== PAGE AJOUT ===-->
+    <string name="pageAjoutTitre">Ajout d\'une miniature</string>
+    <string name="pageAjoutAjouteUneImage">Charger l\' image de la miniature</string>
+    <string name="pageAjoutEntreeNom">@string/ObjetNomVideo</string>
+    <string name="pageAjoutEntreeDescription">@string/ObjetDescriptionVideo</string>
+    
+    <string-array name="pageAjoutChoixLibelleVideo">
+        <item>Type video: Live</item>
+        <item>Type video: Video</item>
+    </string-array>
+
+    <!--=== PAGE POP-UP ===-->
+
+    <string name="popUpNomMiniature">Nom miniature</string>
+    <string name="popUpDescriptionTitre">Description de la video</string>
+    <string name="popUpDescriptionSousTitre">Petite description de la video</string>
+    <string name="popUpTypeVideoTitre">Type de la video</string>
+    <string name="popUpTypeVideoSousTitre">Type video</string>
+
+
+    <string name="pageAjoutBoutonConfirme">Confirmer</string>
+
+    <!-- information miniature/video -->
+    <string name="ObjetNomVideo">Nom de la video</string>
+    <string name="ObjetDescriptionVideo">Description de la video</string>
+</resources>
