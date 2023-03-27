@@ -19,5 +19,14 @@
         android:layout_marginTop="@dimen/marge_defaut"
         android:layout_marginLeft="@dimen/marge_defaut"
         style="@style/StyleTextSousTitre"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/marge_defaut"
+        android:layout_marginLeft="@dimen/marge_defaut"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     
 </LinearLayout>

@@ -1,14 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MiniatureCollection" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MiniatureCollection" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/rouge</item>
         <item name="colorPrimaryVariant">@color/rouge</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/bleuFonce</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/bleuFonce</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -21,9 +21,14 @@
         <item name="android:fontFamily">@font/kanit</item>
     </style>
 
+    <!-- Composant description -->
+    <style name="StyleDescription" parent="StyleTextParDefaut">
+        <item name="android:textSize">15sp</item>
+    </style>
+
     <!-- Composant sous titre -->
     <style name="StyleTextSousTitre" parent="StyleTextParDefaut">
-        <item name="android:textColor">@color/bleuFonce</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <!-- Composant titre -->

@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import fr.maxtam.miniaturecollection.R
 import fr.maxtam.miniaturecollection.adapteur.AdapteurMiniature
+import fr.maxtam.miniaturecollection.adapteur.MiniatureObjetDecoration
 
 class HomeFragment : Fragment(){
 
@@ -17,7 +18,12 @@ class HomeFragment : Fragment(){
 
         // recuperer le recycleur de vue
         val recycleurVueHorizontal = view?.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        recycleurVueHorizontal?.adapter = AdapteurMiniature()
+        recycleurVueHorizontal?.adapter = AdapteurMiniature(R.layout.objet_horizontale_miniature)
+
+        // recuperer le second recycleur de vue
+        val recycleurVueVertical = view?.findViewById<RecyclerView>(R.id.vertical_recycler_view)
+        recycleurVueVertical?.adapter = AdapteurMiniature(R.layout.objet_vertical_miniature)
+        recycleurVueVertical?.addItemDecoration(MiniatureObjetDecoration())
 
         return view
     }

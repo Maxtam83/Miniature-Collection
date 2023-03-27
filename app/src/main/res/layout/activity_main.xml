@@ -17,6 +17,7 @@
         android:layout_marginTop="@dimen/marge_defaut"
         style="@style/StyleTextParDefaut"/>
 
+
     <TextView
         android:id="@+id/TitrePage"
         style="@style/StyleTextTitre"

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import fr.maxtam.miniaturecollection.R
 
 
-class AdapteurMiniature : RecyclerView.Adapter<AdapteurMiniature.ViewHolder>(){
+class AdapteurMiniature(private val layoutId: Int) : RecyclerView.Adapter<AdapteurMiniature.ViewHolder>(){
 
     // boite pour ranger tout les composants à controler
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -18,12 +18,12 @@ class AdapteurMiniature : RecyclerView.Adapter<AdapteurMiniature.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.objet_horizontale_miniature, parent,false)
+            .inflate(layoutId, parent,false)
         return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return 5
+        return 8
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) { }

@@ -21,6 +21,11 @@
         <item name="android:fontFamily">@font/kanit</item>
     </style>
 
+    <!-- Composant description -->
+    <style name="StyleDescription" parent="StyleTextParDefaut">
+        <item name="android:textSize">15sp</item>
+    </style>
+
     <!-- Composant sous titre -->
     <style name="StyleTextSousTitre" parent="StyleTextParDefaut">
         <item name="android:textColor">@color/bleuFonce</item>
